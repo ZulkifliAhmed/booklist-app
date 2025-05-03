@@ -22,7 +22,8 @@ body {
   color: #131212df;
   cursor: default;
 }
-.container h2 span {
+.container h2 .fa-book-open,
+.container h2 span  {
   color: #0088b4;
 }
 form input {
@@ -77,4 +78,20 @@ form input {
   color: #131212df;
   background-color: #dedede;
   text-transform: capitalize;
+}
+.container .action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.container .action div{
+  font-size: 18px;
+  cursor: pointer;
+}
+.container .action .square{
+  color: #0088b4;
+}
+.container .action .trash{
+  color: red;
 }
