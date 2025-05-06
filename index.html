@@ -3,6 +3,7 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Booklist App</title>
@@ -10,49 +11,27 @@
  <body>
     <div class="container">
        <h2><i class="fa-solid fa-book-open"></i> my <span>booklist</span> app</h2>
-       <form action="">
-        <input type="text" placeholder="Enter author">
-        <input type="text" placeholder="Enter book titel">
-        <input type="text" placeholder="Enter ISBN">
-        <button class="submitBtn" type="submit">add book</button>
+       <form class="bookForm">
+        <input type="text" id="author" placeholder="Enter author">
+        <input type="text" id="titel" placeholder="Enter book titel">
+        <input type="text" id="isbn" placeholder="Enter ISBN">
+        <button id="submitBtn" type="submit">add book</button>
        </form>
        <hr/>
        <h3>List of Books</h3>
-       <table>
+       <table class="table">
+       <thead>
         <tr>
             <th>author</th>
             <th>titel</th>
             <th>ISBN</th>
             <th>action</th>
         </tr>
-        <tr>
-            <td>adam uakob </td>
-            <td>the juncel jurne</td>
-            <td>1450</td>
-            <td class="action">
-                <div class="square"><i class="fa-regular fa-pen-to-square"></i></div>
-               <div class="trash"> <i class="fa-regular fa-trash-can"></i></div>
-            </td>
-        </tr>
-        <tr>
-            <td>ahmed ibrahime</td>
-            <td>day in the desr</td>
-            <td>2850</td>
-            <td class="action">
-                <div  class="square"><i class="fa-regular fa-pen-to-square"></i></div>
-               <div class="trash"> <i class="fa-regular fa-trash-can"></i></div>
-            </td>
-        </tr>
-        <tr>
-            <td>mohamed alaa</td>
-            <td>how to be</td>
-            <td>110</td>
-            <td class="action">
-                <div  class="square"><i class="fa-regular fa-pen-to-square"></i></div>
-                <div class="trash"> <i class="fa-regular fa-trash-can"></i></div>
-            </td>
-        </tr>
+       </thead>
+       <tbody class="bookList">
+       </tbody>
        </table>
     </div>
+    <script src="main.js"></script>
  </body>
  </html>

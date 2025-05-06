@@ -23,7 +23,7 @@ body {
   cursor: default;
 }
 .container h2 .fa-book-open,
-.container h2 span  {
+.container h2 span {
   color: #0088b4;
 }
 form input {
@@ -36,7 +36,7 @@ form input {
   outline: none;
   background-color: white;
 }
-.container .submitBtn {
+.container button {
   width: 100%;
   padding: 10px;
   outline: none;
@@ -49,12 +49,12 @@ form input {
   cursor: pointer;
   transition: 0.7s ease;
 }
-.container .submitBtn:hover {
+.container button:hover {
   background-color: #4aa444;
 }
 .container hr {
   height: 2px;
-  background-color: #4aa444;
+  background-color: #0088b4;
   margin: 25px 0;
 }
 .container h3 {
@@ -70,7 +70,7 @@ form input {
   color: #fff;
   text-align: start;
   text-transform: capitalize;
-  background-color: #4aa444;
+  background-color: #0088b4;
   cursor: default;
 }
 .container table td {
@@ -79,19 +79,26 @@ form input {
   background-color: #dedede;
   text-transform: capitalize;
 }
-.container .action {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-.container .action div{
-  font-size: 18px;
-  cursor: pointer;
-}
-.container .action .square{
-  color: #0088b4;
-}
-.container .action .trash{
+.container .bookList .delete {
+  margin-left: 15px;
   color: red;
+  font-size: 20px;
+  cursor: pointer;
+  width: 20px;
+}
+.fa-trash-can {
+  pointer-events: none;
+}
+.done {
+  padding: 7px;
+  margin: 10px 0;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: #4aa444;
+}
+.done.delete {
+  background-color: #e12a2adf;
 }
