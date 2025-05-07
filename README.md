@@ -1,0 +1,1 @@
+To practice Object-Oriented Programming (OOP) in JavaScript, I created a BookList App that allows users to add and remove books from a list. This project helped me understand how to create classes in JavaScript and use inheritance, as well as how to manipulate elements for adding and deleting content dynamically.
